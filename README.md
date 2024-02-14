@@ -50,6 +50,11 @@ limitations under the License.
 To use in Observable,
 
 ```javascript
+stopwords = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/datasets-stopwords-en@umd/browser.js' )
+```
+The previous example will load the latest bundled code from the umd branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/datasets-stopwords-en/tags). For example,
+
+```javascript
 stopwords = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/datasets-stopwords-en@v0.2.0-umd/browser.js' )
 ```
 
@@ -62,7 +67,7 @@ var stopwords = require( 'path/to/vendor/umd/datasets-stopwords-en/index.js' )
 To include the bundle in a webpage,
 
 ```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/datasets-stopwords-en@v0.2.0-umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/datasets-stopwords-en@umd/browser.js"></script>
 ```
 
 If no recognized module system is present, access bundle contents via the global scope:
@@ -109,7 +114,7 @@ var list = stopwords();
 <body>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-floor@umd/browser.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/datasets-stopwords-en@v0.2.0-umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/datasets-stopwords-en@umd/browser.js"></script>
 <script type="text/javascript">
 (function () {
 
