@@ -41,89 +41,17 @@ limitations under the License.
 
 <!-- /.intro -->
 
-<section class="installation">
 
-## Installation
 
-```bash
-npm install @stdlib/datasets-stopwords-en
-```
 
-Alternatively,
 
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
--   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
--   To use as a general utility for the command line, install the corresponding [CLI package][cli-section] globally.
 
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
 
-To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
 
-</section>
-
-<section class="usage">
-
-## Usage
-
-```javascript
-var stopwords = require( '@stdlib/datasets-stopwords-en' );
-```
-
-#### stopwords()
-
-Returns a list of 301 english [stop words][stopwords].
-
-```javascript
-var list = stopwords();
-/* returns
-    [
-        'a',
-        'about',
-        'above',
-        'across',
-        'actually',
-        ...
-    ]
-*/
-```
-
-</section>
-
-<!-- /.usage -->
-
-<section class="examples">
-
-## Examples
-
-<!-- eslint no-undef: "error" -->
-
-```javascript
-var floor = require( '@stdlib/math-base-special-floor' );
-var randu = require( '@stdlib/random-base-randu' );
-var stopwords = require( '@stdlib/datasets-stopwords-en' );
-
-var list = stopwords();
-var len = list.length;
-var idx;
-var i;
-
-// Select random words from the list...
-for ( i = 0; i < 100; i++ ) {
-    idx = floor( randu()*len );
-    console.log( list[ idx ] );
-}
-```
-
-</section>
-
-<!-- /.examples -->
-
-* * *
 
 <section class="cli">
 
-## CLI
+
 
 <section class="installation">
 
@@ -141,7 +69,7 @@ npm install -g @stdlib/datasets-stopwords-en-cli
 
 <section class="usage">
 
-### Usage
+## Usage
 
 ```text
 Usage: stopwords-en [options]
@@ -158,7 +86,7 @@ Options:
 
 <section class="examples">
 
-### Examples
+## Examples
 
 ```bash
 $ stopwords-en
@@ -190,6 +118,11 @@ The data files (databases) are licensed under an [Open Data Commons Public Domai
 
 <section class="related">
 
+## See Also
+
+-   <span class="package-name">[`@stdlib/datasets-stopwords-en`][@stdlib/datasets-stopwords-en]</span><span class="delimiter">: </span><span class="description">a list of English stop words.</span>
+
+
 </section>
 
 <!-- /.related -->
@@ -207,7 +140,7 @@ This package is part of [stdlib][stdlib], a standard library for JavaScript and 
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
-#### Community
+### Community
 
 [![Chat][chat-image]][chat-url]
 
@@ -225,8 +158,8 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 <section class="links">
 
-[npm-image]: http://img.shields.io/npm/v/@stdlib/datasets-stopwords-en.svg
-[npm-url]: https://npmjs.org/package/@stdlib/datasets-stopwords-en
+[npm-image]: http://img.shields.io/npm/v/@stdlib/datasets-stopwords-en-cli.svg
+[npm-url]: https://npmjs.org/package/@stdlib/datasets-stopwords-en-cli
 
 [test-image]: https://github.com/stdlib-js/datasets-stopwords-en/actions/workflows/test.yml/badge.svg?branch=main
 [test-url]: https://github.com/stdlib-js/datasets-stopwords-en/actions/workflows/test.yml?query=branch:main
